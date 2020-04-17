@@ -2,8 +2,8 @@ const CM = 96/2.54;
 const INCH = 96;
 
 class TargetBuilder {
-  constructor() {
-    this.wrap = d3.select('#wrapper');
+  constructor(id) {
+    this.wrap = d3.select(id);
   }
   
   Draw(targets) {

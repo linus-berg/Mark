@@ -10,6 +10,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
     <script src="target_builder.js"></script>
 
+    <link href="reset.css" rel="stylesheet"> 
     <link href="style.css" rel="stylesheet"> 
     <link href="marx.min.css" rel="stylesheet"> 
   </head>
@@ -18,17 +19,17 @@
     <div id="controls">
       <input id="add-target" type="button" value="Add Target">
       <span>Size(cm)</span> 
-      <input id="size" type="number" min=2 placeholder="size (cmxcm)">
+      <input id="size" type="number" min=2 value=2>
       <span>Column</span> 
-      <input id="column" type="number" min=1 placeholder="column">
+      <input id="column" type="number" min=1 value=1>
       <span>Row</span> 
-      <input id="row" type="number" min=1 placeholder="row">
+      <input id="row" type="number" min=1 value=1>
       <span>Center Color</span> 
-      <input id="color" type="color">
+      <input id="color" type="color" value="#FF9200">
     </div>
 
-    <div>
-      <table id="targets">
+    <div id="target-wrapper">
+      <table id="target-list">
         <thead>
           <tr>
             <th>Col</th>
@@ -40,7 +41,7 @@
         <tbody>
         </tbody>
       </table>
-      <div id="wrapper">
+      <div id="target-print">
       </div>
     </div>
   </body>

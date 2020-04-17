@@ -12,8 +12,8 @@ function GetIdx(col, row) {
   return `${col}x${row}`; 
 }
 
-const builder = new TargetBuilder(targets);
 
+const builder = new TargetBuilder('#target-print');
 
 d3.select('#add-target').on('click', function() {
   const size = parseInt(d3.select('#size').node().value);
@@ -38,7 +38,7 @@ d3.select('#add-target').on('click', function() {
     col: col,
   }; 
   
-  const p = d3.select('#targets tbody');
+  const p = d3.select('#target-list tbody');
   const tr =  p.selectAll('tr').data(TransformData(targets), (d) => d.idx).enter().append('tr');
   
   tr.append('td').text(function (d) {
