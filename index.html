@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Target Maker</title>
+    <meta name="description" content="Target Maker">
+    <meta name="author" content="Linus Berg">
+    
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
+    <script src="target_builder.js"></script>
+
+    <link href="style.css" rel="stylesheet"> 
+    <link href="marx.min.css" rel="stylesheet"> 
+  </head>
+
+  <body>
+    <div id="controls">
+      <input id="add-target" type="button" value="Add Target">
+      <span>Size(cm)</span> 
+      <input id="size" type="number" min=2 placeholder="size (cmxcm)">
+      <span>Column</span> 
+      <input id="column" type="number" min=1 placeholder="column">
+      <span>Row</span> 
+      <input id="row" type="number" min=1 placeholder="row">
+      <span>Center Color</span> 
+      <input id="color" type="color">
+    </div>
+
+    <div>
+      <table id="targets">
+        <thead>
+          <tr>
+            <th>Col</th>
+            <th>Row</th>
+            <th>Size</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+      <div id="wrapper">
+      </div>
+    </div>
+  </body>
+  <script src="target.js"></script>
+</html>

@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+#wrapper {
+  margin-top: 4px;
+  display: inline-grid;
+  grid-gap: 0; 
+  width: 29.7cm;
+  height: 21.0cm;
+  
+  background-color: #ffffff;
+
+  overflow: hidden;
+  
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  border: 1px solid black;
+  
+  align-items: center;
+  justify-items: center;
+}
+
+@page {
+  margin: 0;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #wrapper * {
+    visibility: visible;
+    box-shadow: 0;
+  }
+}
+
+svg {
+  //border: 1px solid black;
+}
+
+input[type=number] {
+  display: inline !important;
+  width: 6rem !important;
+}
+#targets {
+  display: inline-table;
+  vertical-align: top;
+  width: 20vw;
+}
+
