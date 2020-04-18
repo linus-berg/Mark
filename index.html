@@ -17,42 +17,38 @@
     <div id="target-wrapper">
       <div id="controls">
         <form>
+          <label for="bg_color">BG Colour:</label>
+          <input id="bg_color" type="color" value="#FFFFFF">
           <fieldset>
-            <legend>Position</legend>
+            <legend>Position & Size</legend>
             <label for="row">Row:</label>
             <input id="row" type="number" min=1 value=1>
             <label for="col">Column:</label>
             <input id="col" type="number" min=1 value=1>
-          </fieldset>
-          <fieldset>
-            <legend>Style</legend>
             <label for="size">Size (cm):</label>
             <input id="size" type="number" min=2 value=2>
-            
+          </fieldset>
+          <fieldset>
+            <legend>Grid</legend>
             <label for="grid_color">Grid Colour:</label>
             <input id="grid_color" type="color" value="#000000">
             
-            <label for="bg_color">BG Colour:</label>
-            <input id="bg_color" type="color" value="#FFFFFF">
-          </fieldset>
-          <fieldset>
-            <legend>Center</legend>
-            <label for="c_color">Center Colour:</label>
-            <input id="c_color" type="color" value="#FF9200">
-
-            <label for="c_size">Center Size:</label>
-            <input id="c_size" type="number" min=0 value=2>
-          </fieldset>
-          <fieldset>
-            <legend>Options</legend>
-            <label for="txt">Text:</label>
-            <input id="txt" type="checkbox">
-
             <label for="style">Circles:</label>
             <input id="style" type="checkbox" disabled>
             
             <label for="metric">Metric:</label>
             <input id="metric" type="checkbox" checked disabled>
+            
+            <label for="txt">Text:</label>
+            <input id="txt" type="checkbox">
+          </fieldset>
+          <fieldset>
+            <legend>Center</legend>
+            <label for="c_color">Colour:</label>
+            <input id="c_color" type="color" value="#FF9200">
+
+            <label for="c_size">Size:</label>
+            <input id="c_size" type="number" min=0 value=2>
           </fieldset>
           <input id="target-add" type="button" value="Add Target">
         </form> 

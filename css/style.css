@@ -1,24 +1,5 @@
 body {
-  margin: 0;
-  padding: 0;
   background-color: #f4f4f4;
-}
-
-#target-print {
-  display: inline-grid;
-  grid-gap: 0; 
-  
-  width: 29.7cm;
-  height: 21.0cm;
-  
-  background-color: #ffffff;
-
-  overflow: hidden;
-  
-  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
-  
-  align-items: center;
-  justify-items: center;
 }
 
 form {
@@ -36,14 +17,34 @@ input, label {
 input[type=number] {
   width: 6rem;
 }
+
+#target-print {
+  display: inline-grid;
+  grid-gap: 0; 
+  margin: 4px;  
+  width: 29.7cm;
+  height: 21.0cm;
+  
+  background-color: #ffffff;
+
+  overflow: hidden;
+  
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  
+  align-items: center;
+  justify-items: center;
+}
+
 #target-add {
   display: block;
 }
+
 #target-list {
   display: inline-table;
   vertical-align: top;
   width: 20vw;
 }
+
 #controls {
   display: inline-block;
   vertical-align: top;
