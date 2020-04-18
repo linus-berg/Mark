@@ -21,15 +21,33 @@ body {
   justify-items: center;
 }
 
-input[type=number] {
-  display: inline !important;
-  width: 6rem !important;
+form {
+  margin-left: 4px;
+}
+fieldset {
+  border: 1px solid black;
+  padding: 4px;
 }
 
+input, label {
+  display: inline-block;
+}
+
+input[type=number] {
+  width: 6rem;
+}
+#target-add {
+  display: block;
+}
 #target-list {
   display: inline-table;
   vertical-align: top;
   width: 20vw;
+}
+#controls {
+  display: inline-block;
+  vertical-align: top;
+  width: 15vw;
 }
 
 @page {
@@ -38,23 +56,24 @@ input[type=number] {
 }
 
 @media print {
-  body * {
+  body {
+    display: inline-block;
+  } 
+  
+  #target-wrapper {
+    display: inline-block;
+  }
+  
+  #target-wrapper > * {
     display: none;
   }
   
-  #target-wrapper {
-    display: block;
-  }
-
-  #target-list {
-    display: none;
-  }
-  #target-print * {
+  #target-print {
     display: inline-grid;
     border: 0;
     margin: 0;
     padding: 0;
-    box-shadow: 0;
+    box-shadow: none;
   }
 }
 
